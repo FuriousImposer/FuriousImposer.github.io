@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>GenerationLX</title>
-	<style type="text/css">
-		@keyframes colorsRandom {
+<meta charset="UTF-8">
+<title>GeneratorLX</title>
+<style type="text/css">
+	@keyframes colorsRandom {
 			form {color: #4a14de;}
 			 to {color: #de1439;}
 }}
-@-webkit-keyframes {
-	form {color: #4a14de;} 
-	to {color: #de1439;}
+	@-webkit-keyframes {
+			form {color: #4a14de;} 
+			to {color: #de1439;}
+	}
+	@-webkit-keyframes pulsate {
+ 			50% { color: #32127a; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
 }
-@-webkit-keyframes pulsate {
- 50% { color: #32127a; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
-}
-@keyframes pulsate {
- 50% { color: #32127a; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+	@keyframes pulsate {
+ 			50% { color: #32127a; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
 }
 	.logo,.result {
-		color: #000;
- 	 text-shadow: 0 -1px rgba(0,0,0,.1);
- 	 -webkit-animation: pulsate 1.5s linear infinite;
-	  animation: pulsate 1.5s linear infinite;
-	}
-	</style>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
-	</script>
+	color: #000;
+ 	text-shadow: 0 -1px rgba(0,0,0,.1);
+ 	-webkit-animation: pulsate 1.5s linear infinite;
+	animation: pulsate 1.5s linear infinite;
+}
+</style>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+</script>
 </head>
 <body>
 	<div class="generalBox" style="width: 800px; height: 600px; background-color: lightgray; margin: -8px auto 0 auto; position: relative; border-radius: 4px;">
@@ -39,6 +39,13 @@
 		</div>
 		<div class="resultBox" style="width: 800px; height: 200px; background-color: gray; position: absolute; bottom: 0; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;">
 			<p class="result" style="font-size: 26px; font-style: italic; font-weight: bold; color: #000; text-align: center; margin: 84px 0 0 0;">Результат будет тут!</p>
+			<div class="imgResult" style="width; visibility: hidden; 250px; height: 200px; position: absolute; right: 0; bottom: 0">
+				<img style="width: 100%; visibility: hidden; height: 100%;" src="imgMan/1.jpg">
+				<a style="position: absolute; bottom: 0; right: 160px; color: #fff; text-decoration: none; visibility: hidden;" href="/">ЗАГРУЗИТЬ</a>
+			</div>
+			<div class="infoResult" style="width: 530px; visibility: hidden; height: 180px; background-color: #fff; border-radius: 4px; position: absolute; bottom: 10px; left: 10px;">
+				
+			</div>
 		</div>
 	</div>
 	<script src="script.js"></script>
