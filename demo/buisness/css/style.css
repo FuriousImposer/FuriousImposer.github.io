@@ -1,0 +1,47 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	width: 100%
+}
+
+.header {
+	width: 1700px;
+	height: 93px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #868686;
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	border-left: transparent solid 16px;
+	border-right: transparent solid 16px;
+	border-top: transparent solid 10px;
+	border-bottom: transparent solid 10px;
+}
+
+nav li {
+	list-style-type: none;
+	display: inline;
+	margin:0 8px 0 8px;
+}
+
+nav ul {
+	margin: 0 280px 0 0;
+}
+
+nav a:hover {
+	background-color: #ffbb42;
+	border-radius: 2px;
+	color: #fff;
+}
+
+.logo {
+	margin:0 0 0 265px;
+}
