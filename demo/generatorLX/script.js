@@ -22,5 +22,3 @@ var womanResult = womanName[randomsNumber(womanName)], manResult = manName[rando
 mounthResult = mounth[randomsNumber(mounth)], greetingResult = greeting[randomsNumber(greeting)], twoResult = two[randomsNumber(two)], threeResult = three[randomsNumber(three)],
 fourResult = four[randomsNumber(four)], fiveResult = five[randomsNumber(five)], sixResult = six[randomsNumber(six)], sevenResult = seven[randomsNumber(seven)],
 eightResult = eight[randomsNumber(eight)], nineResult = nine[randomsNumber(nine)], tenResult = ten[randomsNumber(ten)]; 
-
-console.log(womanResult);
