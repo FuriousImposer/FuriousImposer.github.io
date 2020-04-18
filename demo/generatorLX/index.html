@@ -5,25 +5,40 @@
 	<title>GenerationLX</title>
 	<style type="text/css">
 		@keyframes colorsRandom {
-			form {
-				color: #4a14de;
-				} to {
-				color: #de1439;	
-				}
-		}
+			form {color: #4a14de;}
+			 to {color: #de1439;}
+}}
+@-webkit-keyframes {
+	form {color: #4a14de;} 
+	to {color: #de1439;}
+}
+@-webkit-keyframes pulsate {
+ 50% { color: #32127a; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+ 50% { color: #32127a; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+	.logo,.result {
+		color: #000;
+ 	 text-shadow: 0 -1px rgba(0,0,0,.1);
+ 	 -webkit-animation: pulsate 1.5s linear infinite;
+	  animation: pulsate 1.5s linear infinite;
+	}
 	</style>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js">
+	</script>
 </head>
 <body>
-	<div class="generalBox" style="width: 800px; height: 600px; background-color: lightgray; margin: 26px auto; position: relative; border-radius: 4px;">
+	<div class="generalBox" style="width: 800px; height: 600px; background-color: lightgray; margin: -8px auto 0 auto; position: relative; border-radius: 4px;">
+		<h1 class="logo" style="text-align: center; padding: 136px 0 0 0; font-style: italic; font-weight: bold; font-size:52px;">GENERATOR LX</h1>
 		<p style="padding: 280px 0 0 0; text-transform: uppercase; margin: 0 0 0 286px;"><input type="radio" checked name="mw" style="vertical-align: -1px;"> - женский <input type="radio" name="mw" style="vertical-align: -1px;"> - мужской</p>
 		<div style="position: absolute; bottom: 236px; left:120px;">
 		<button type="button" style="margin: 0 4px 0 4px; width: 160px; height: 40px; font-size: 16px; text-transform: uppercase; background-color: #3f7fbf; border: 0; color: #fff;">Начать заново</button>
 		<button type="button" style="margin: 0 4px 0 4px; width: 160px; height: 40px; font-size: 16px; text-transform: uppercase; background-color: #3f7fbf; border: 0; color: #fff;">Выдать вопрос</button>
-		<span class="score" style="margin: 0 4px 0 4px;text-transform: uppercase;">Сообщение по счёту: </span>
+		<span class="score" style="margin: 0 4px 0 4px;text-transform: uppercase;">Сообщение по счёту: 0</span>
 		</div>
 		<div class="resultBox" style="width: 800px; height: 200px; background-color: gray; position: absolute; bottom: 0; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;">
-			<p style="font-size: 26px; color: #000; text-align: center; margin: 50px 0 0 0;">Результат будет тут!</p>
+			<p class="result" style="font-size: 26px; font-style: italic; font-weight: bold; color: #000; text-align: center; margin: 84px 0 0 0;">Результат будет тут!</p>
 		</div>
 	</div>
 	<script src="script.js"></script>
