@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>GeneratorLX</title>
+<title>Generator😈LX😈</title>
 <style type="text/css">
 	@keyframes colorsRandom {
 			form {color: #4a14de;}
@@ -28,23 +28,28 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js">
 </script>
 </head>
-<body>
+<body style="outline: none;">
+	<div class="popup" style="width:750px; height: 550px; background: black; opacity: .9; top: 52px; left:300px; position: absolute; z-index: 2; visibility: hidden;">
+		<h2 style="color:#fff; text-align: center; margin: 180px 0 14px 0;">ХОТИТЕ ПОВТОРИТЬ?</h2>
+		<button class="repeat" style="width: 160px; height: 28px;  margin: 0 0 0 306px; font-size: 18px; font-weight: 600;">ПОВТОРИТЬ</button>
+	</div>
 	<div class="generalBox" style="width: 800px; height: 600px; background-color: lightgray; margin: -8px auto 0 auto; position: relative; border-radius: 4px;">
 		<h1 class="logo" style="text-align: center; padding: 136px 0 0 0; font-style: italic; font-weight: bold; font-size:52px;">GENERATOR LX</h1>
-		<p style="padding: 142px 0 0 0; text-transform: uppercase; margin: 0 0 0 286px;"><input type="radio" checked name="mw" style="vertical-align: -1px;"> - женский <input type="radio" name="mw" style="vertical-align: -1px;"> - мужской</p>
+		<p style="padding: 142px 0 0 0; text-transform: uppercase; margin: 0 0 0 286px;"><input class="womanCheck" type="radio" checked name="mw" style="vertical-align: -1px;"> - женский <input class="manCheck" type="radio" name="mw" style="vertical-align: -1px;"> - мужской</p>
 		<div style="position: absolute; bottom: 236px; left:120px;">
-		<button type="button" style="margin: 0 4px 0 4px; width: 160px; height: 40px; font-size: 16px; text-transform: uppercase; background-color: #3f7fbf; border: 0; color: #fff;">Начать заново</button>
-		<button type="button" style="margin: 0 4px 0 4px; width: 160px; height: 40px; font-size: 16px; text-transform: uppercase; background-color: #3f7fbf; border: 0; color: #fff;">Выдать вопрос</button>
+		<button class="reload" type="button" style="margin: 0 4px 0 4px; width: 160px; height: 40px; font-size: 16px; text-transform: uppercase; background-color: #3f7fbf; border: 0; color: #fff;">Начать заново</button>
+		<button class="btnResult" type="button" style="margin: 0 4px 0 4px; width: 160px; height: 40px; font-size: 16px; text-transform: uppercase; background-color: #3f7fbf; border: 0; color: #fff;">Выдать вопрос</button>
 		<span class="score" style="margin: 0 4px 0 4px;text-transform: uppercase;">Сообщение по счёту: 0</span>
 		</div>
 		<div class="resultBox" style="width: 800px; height: 200px; background-color: gray; position: absolute; bottom: 0; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px;">
 			<p class="result" style="font-size: 26px; font-style: italic; font-weight: bold; color: #000; text-align: center; margin: 84px 0 0 0;">Результат будет тут!</p>
-			<div class="imgResult" style="width; visibility: hidden; 250px; height: 200px; position: absolute; right: 0; bottom: 0">
-				<img style="width: 100%; visibility: hidden; height: 100%;" src="imgMan/1.jpg">
-				<a style="position: absolute; bottom: 0; right: 160px; color: #fff; text-decoration: none; visibility: hidden;" href="/">ЗАГРУЗИТЬ</a>
+			<div class="imgResult" style="width; visibility: hidden; width:250px; height: 200px; position: absolute; right: 0; bottom: 0">
+				<img class="imgMW" style="width: 100%; visibility: hidden; height: 100%; opacity: .15;" src="">
+				<a class="downloadIMG" style="position: absolute; bottom: 130px; right: 84px; color: #fff; text-decoration: none; visibility: hidden;" href="" download="fotoLX.jpg">ЗАГРУЗИТЬ</a>
+				<a class="viewImg" style="position: absolute; bottom: 110px; right: 69px; color: #fff; text-decoration: none; visibility: hidden;" href="">ПРОСМОТРЕТЬ</a>
 			</div>
-			<div class="infoResult" style="width: 530px; visibility: hidden; height: 180px; background-color: #fff; border-radius: 4px; position: absolute; bottom: 10px; left: 10px;">
-				
+			<div class="infoResult" style="width: 530px; visibility: hidden; height: 196.5px; background-color: #fff; border-radius: 4px; position: absolute; bottom: 1.5px; left: 10px;">
+				<p style="font-size: 18px; text-align: center; margin: 20px 0 0 0;">Hello World</p>
 			</div>
 		</div>
 	</div>
